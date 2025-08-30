@@ -48,4 +48,31 @@ nav a:hover {
         grid-template-columns: 1fr;
     }
  } 
+/* center all videos and images */
+video, img {
+    display: block; 
+    /* make them behave like block elements */
+    margin: 0 auto;
+    /* center horizontally */
+    max-width: 100%;
+    /* make sure the fit smaller screens */
+    height: auto;
+    /* keep aspect ratio */
+}
+/* center all text */ body {
+    text-align: center;
+}
 
+/* make content fit mobile screen */ img, video {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.container {
+    max-width: 600px; /*keeps things neat on big screens */
+    margin: 0 auto;
+    padding: 10px;
+}
