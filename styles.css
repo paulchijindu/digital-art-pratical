@@ -2,24 +2,37 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: rgb(195, 129, 129);
+    line-height: 1.6;
 }
 
+/* make images scale nicely */ img {
+    max-width: 100%;
+    height: auto;
+}
+
+ /* container */ .container { 
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+ }
 header {
-    background-color: #333;
-    color: white;
+    background-color: rgb(26, 2, 2);
+    color: blue;
     padding: 15px;
     text-align: center;
 }
 
+ /* Responsive navigation menu */
+
 nav {
-    background: #444;
+    background: rgb(128, 208, 220);
     padding: 10px;
     text-align: center;
 }
 
 nav a {
-    color: white;
+    color: rgb(25, 7, 7);
     text-decoration: none;
     padding: 8px 15px;
     display: inline-block;
@@ -28,7 +41,17 @@ nav a {
 nav a:hover {
     background: #666;
 }
-
+ /* responsive grid (2 columns on desktop, 1 column on mobile) */
+ .grid {
+    display:  grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20PX;
+ }
+ @media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+ 
 .container {
     padding: 20px;
 }
@@ -48,7 +71,7 @@ nav a:hover {
     display: inline-block;
     vertical-align: top;
     background: white;
-    box-shadow: 3px 3px 6px gray;
+    box-shadow: 3px 3px 6px rgba(51, 50, 50, 0.393);
 }
 
 .work img {
